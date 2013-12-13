@@ -1,7 +1,7 @@
-#ifndef CONST_SPLASHSCREEN
-#define CONST_SPLASHSCREEN
+#ifndef CONST_MENUSCREEN
+#define CONST_MENUSCREEN
 
-#include "SplashScreen.h"
+#include "Menu.h"
 
 // ===========================================================
 // Inner Classes
@@ -19,19 +19,19 @@
 // Constructors
 // ===========================================================
 
-SplashScreen::~SplashScreen()
+Menu::~Menu()
 {
 }
 
-SplashScreen::SplashScreen()
+Menu::Menu()
 {
-
 }
 
-SplashScreen* SplashScreen::create()
+Menu* Menu::create()
 {
-    SplashScreen* screen = new SplashScreen();
+    Menu* screen = new Menu();
     screen->autorelease();
+    screen->retain();
     
     return screen;
 }
@@ -44,27 +44,27 @@ SplashScreen* SplashScreen::create()
 // Override Methods
 // ===========================================================
 
-void SplashScreen::onEnter()
+void Menu::onEnter()
 {
     Screen::onEnter();
 }
 
-void SplashScreen::onExit()
+void Menu::onExit()
 {
     Screen::onExit();
 }
 
-void SplashScreen::onEnterTransitionDidFinish()
+void Menu::onEnterTransitionDidFinish()
 {
     Screen::onEnterTransitionDidFinish();
 }
 
-void SplashScreen::onExitTransitionDidStart()
+void Menu::onExitTransitionDidStart()
 {
     Screen::onExitTransitionDidStart();
 }
 
-void SplashScreen::update(float pDeltaTime)
+void Menu::update(float pDeltaTime)
 {
     Screen::update(pDeltaTime);
 }

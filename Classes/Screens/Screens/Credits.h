@@ -1,11 +1,9 @@
-#ifndef CONST_SPLASHSCREEN_H
-#define CONST_SPLASHSCREEN_H
+#ifndef CONST_CREDITSSCREEN_H
+#define CONST_CREDITSSCREEN_H
 
 #include "Screen.h"
 
-#include "AppDelegate.h"
-
-class SplashScreen : public Screen
+class Credits : public Screen
 {
     protected:
         // ===========================================================
@@ -24,7 +22,7 @@ class SplashScreen : public Screen
         // Constructors
         // ===========================================================
     
-        SplashScreen();
+        Credits();
 
         // ===========================================================
         // Methods
@@ -76,9 +74,9 @@ class SplashScreen : public Screen
         // Constructors
         // ===========================================================
     
-        static SplashScreen* create();
+        static Credits* create();
     
-        ~SplashScreen();
+        ~Credits();
 
         // ===========================================================
         // Methods

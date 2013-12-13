@@ -1,7 +1,7 @@
-#ifndef CONST_SPLASHSCREEN
-#define CONST_SPLASHSCREEN
+#ifndef CONST_LOADINGSCREEN
+#define CONST_LOADINGSCREEN
 
-#include "SplashScreen.h"
+#include "Loading.h"
 
 // ===========================================================
 // Inner Classes
@@ -19,18 +19,17 @@
 // Constructors
 // ===========================================================
 
-SplashScreen::~SplashScreen()
+Loading::~Loading()
 {
 }
 
-SplashScreen::SplashScreen()
+Loading::Loading()
 {
-
 }
 
-SplashScreen* SplashScreen::create()
+Loading* Loading::create()
 {
-    SplashScreen* screen = new SplashScreen();
+    Loading* screen = new Loading();
     screen->autorelease();
     
     return screen;
@@ -44,27 +43,27 @@ SplashScreen* SplashScreen::create()
 // Override Methods
 // ===========================================================
 
-void SplashScreen::onEnter()
+void Loading::onEnter()
 {
     Screen::onEnter();
 }
 
-void SplashScreen::onExit()
+void Loading::onExit()
 {
     Screen::onExit();
 }
 
-void SplashScreen::onEnterTransitionDidFinish()
+void Loading::onEnterTransitionDidFinish()
 {
     Screen::onEnterTransitionDidFinish();
 }
 
-void SplashScreen::onExitTransitionDidStart()
+void Loading::onExitTransitionDidStart()
 {
     Screen::onExitTransitionDidStart();
 }
 
-void SplashScreen::update(float pDeltaTime)
+void Loading::update(float pDeltaTime)
 {
     Screen::update(pDeltaTime);
 }

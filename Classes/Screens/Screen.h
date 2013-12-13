@@ -93,19 +93,9 @@ class Screen : public CCScene, public Touchable, public ButtonReceiver, public C
         // ===========================================================
     
         static const int SCREEN_MENU = 0;
-        static const int SCREEN_SETTINGS = 1;
-        static const int SCREEN_SHOP = 2;
-        static const int SCREEN_MODE = 3;
-        static const int SCREEN_LEVELS = 4;
-        static const int SCREEN_CREDITS = 5;
-        static const int SCREEN_LOADER = 6;
-        static const int SCREEN_PROGRESS = 7;
-        static const int SCREEN_LANGUAGE = 8;
-        static const int SCREEN_CLASSIC_GAME = 9;
-        static const int SCREEN_ARCADE_GAME = 10;
-        static const int SCREEN_PROGRESS_GAME = 11;
-        static const int SCREEN_MORE = 12;
-        static const int SCREEN_EPISODES = 13;
+        static const int SCREEN_GARAGE = 1;
+        static const int SCREEN_LANGUAGES = 2;
+        static const int SCREEN_CREDITS = 3;
 
         // ===========================================================
         // Fields

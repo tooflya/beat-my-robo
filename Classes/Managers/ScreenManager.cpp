@@ -5,6 +5,11 @@
 
 #include "Screen.h"
 
+#include "Menu.h"
+#include "Garage.h"
+#include "Languages.h"
+#include "Credits.h"
+
 // ===========================================================
 // Inner Classes
 // ===========================================================
@@ -63,6 +68,10 @@ ScreenManager* ScreenManager::create()
 
 void ScreenManager::generate()
 {
+    this->mScreens[Screen::SCREEN_MENU] = Menu::create();
+    this->mScreens[Screen::SCREEN_GARAGE] = Garage::create();
+    this->mScreens[Screen::SCREEN_CREDITS] = Credits::create();
+    this->mScreens[Screen::SCREEN_LANGUAGES] = Languages::create();
 }
 
 void ScreenManager::set(int pIndex)

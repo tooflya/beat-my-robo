@@ -140,6 +140,11 @@
 		78659C4A185BADEE00B2B19C /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78659C45185BADED00B2B19C /* Utils.cpp */; };
 		78659C4D185BAE2900B2B19C /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78659C4B185BAE2900B2B19C /* Button.cpp */; };
 		78659C50185BAEEA00B2B19C /* SplashScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78659C4E185BAEEA00B2B19C /* SplashScreen.cpp */; };
+		78659C53185BB56200B2B19C /* Loading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78659C51185BB56200B2B19C /* Loading.cpp */; };
+		78659C5B185BB69000B2B19C /* Credits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78659C54185BB69000B2B19C /* Credits.cpp */; };
+		78659C5C185BB69000B2B19C /* Garage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78659C55185BB69000B2B19C /* Garage.cpp */; };
+		78659C5D185BB69000B2B19C /* Languages.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78659C57185BB69000B2B19C /* Languages.cpp */; };
+		78659C5E185BB69000B2B19C /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78659C59185BB69000B2B19C /* Menu.cpp */; };
 		78AE31C6183E0B4200E148E5 /* Icon-52-ios6.png in Resources */ = {isa = PBXBuildFile; fileRef = 78AE31C4183E0B4200E148E5 /* Icon-52-ios6.png */; };
 		78AE31C7183E0B4200E148E5 /* Icon-57-ios6.png in Resources */ = {isa = PBXBuildFile; fileRef = 78AE31C5183E0B4200E148E5 /* Icon-57-ios6.png */; };
 		78B38A53177E5D0600773C6A /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 78B38A4D177E5D0600773C6A /* AppController.mm */; };
@@ -430,6 +435,16 @@
 		78659C4C185BAE2900B2B19C /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
 		78659C4E185BAEEA00B2B19C /* SplashScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SplashScreen.cpp; sourceTree = "<group>"; };
 		78659C4F185BAEEA00B2B19C /* SplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashScreen.h; sourceTree = "<group>"; };
+		78659C51185BB56200B2B19C /* Loading.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Loading.cpp; sourceTree = "<group>"; };
+		78659C52185BB56200B2B19C /* Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Loading.h; sourceTree = "<group>"; };
+		78659C54185BB69000B2B19C /* Credits.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Credits.cpp; sourceTree = "<group>"; };
+		78659C55185BB69000B2B19C /* Garage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Garage.cpp; sourceTree = "<group>"; };
+		78659C56185BB69000B2B19C /* Garage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Garage.h; sourceTree = "<group>"; };
+		78659C57185BB69000B2B19C /* Languages.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Languages.cpp; sourceTree = "<group>"; };
+		78659C58185BB69000B2B19C /* Languages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Languages.h; sourceTree = "<group>"; };
+		78659C59185BB69000B2B19C /* Menu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Menu.cpp; sourceTree = "<group>"; };
+		78659C5A185BB69000B2B19C /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		78659C5F185BB6D100B2B19C /* Credits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Credits.h; sourceTree = "<group>"; };
 		78AE31C4183E0B4200E148E5 /* Icon-52-ios6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-52-ios6.png"; sourceTree = "<group>"; };
 		78AE31C5183E0B4200E148E5 /* Icon-57-ios6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-57-ios6.png"; sourceTree = "<group>"; };
 		78B38A4C177E5D0600773C6A /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
@@ -1002,6 +1017,16 @@
 		78659C1F185BACEF00B2B19C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				78659C54185BB69000B2B19C /* Credits.cpp */,
+				78659C5F185BB6D100B2B19C /* Credits.h */,
+				78659C55185BB69000B2B19C /* Garage.cpp */,
+				78659C56185BB69000B2B19C /* Garage.h */,
+				78659C57185BB69000B2B19C /* Languages.cpp */,
+				78659C58185BB69000B2B19C /* Languages.h */,
+				78659C59185BB69000B2B19C /* Menu.cpp */,
+				78659C5A185BB69000B2B19C /* Menu.h */,
+				78659C51185BB56200B2B19C /* Loading.cpp */,
+				78659C52185BB56200B2B19C /* Loading.h */,
 				78659C4E185BAEEA00B2B19C /* SplashScreen.cpp */,
 				78659C4F185BAEEA00B2B19C /* SplashScreen.h */,
 			);
@@ -1229,6 +1254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78659C53185BB56200B2B19C /* Loading.cpp in Sources */,
 				7861C0A71834EF9C00B2A896 /* strconv.c in Sources */,
 				7861C0691834ED7800B2A896 /* AppStoreItem.m in Sources */,
 				78659C2D185BAD6D00B2B19C /* InAppPurchaseEventHandler.cpp in Sources */,
@@ -1285,6 +1311,7 @@
 				7861BFEF1834ED5D00B2A896 /* CCStoreUtils.cpp in Sources */,
 				7861C0791834ED7800B2A896 /* VirtualItemNotFoundException.m in Sources */,
 				78659C27185BACEF00B2B19C /* Screen.cpp in Sources */,
+				78659C5D185BB69000B2B19C /* Languages.cpp in Sources */,
 				7861C07C1834ED7800B2A896 /* OpenUDID.m in Sources */,
 				7861C0A91834EF9C00B2A896 /* value.c in Sources */,
 				7861C05F1834ED7800B2A896 /* KeyValueStorage.m in Sources */,
@@ -1299,6 +1326,7 @@
 				7861C0721834ED7800B2A896 /* SingleUseVG.m in Sources */,
 				78659C3D185BADC700B2B19C /* Texture.cpp in Sources */,
 				7861C0741834ED7800B2A896 /* VirtualGood.m in Sources */,
+				78659C5C185BB69000B2B19C /* Garage.cpp in Sources */,
 				7861C0821834ED7800B2A896 /* StoreController.m in Sources */,
 				7861C0A21834EF9C00B2A896 /* load.c in Sources */,
 				7861BFF11834ED5D00B2A896 /* SoomlaJSONConsts.cpp in Sources */,
@@ -1316,12 +1344,14 @@
 				78CA9A0C1858B8840076343A /* GameCenterIos.m in Sources */,
 				7861C0781834ED7800B2A896 /* NotEnoughGoodsException.m in Sources */,
 				785D1A6D1834ECC900A36DB8 /* StoreInventoryBridge.mm in Sources */,
+				78659C5E185BB69000B2B19C /* Menu.cpp in Sources */,
 				7861C07F1834ED7800B2A896 /* PurchaseWithVirtualItem.m in Sources */,
 				78659C22185BACEF00B2B19C /* BatchEntityManager.cpp in Sources */,
 				7861C0661834ED7800B2A896 /* VirtualCurrencyStorage.m in Sources */,
 				7861C05E1834ED7800B2A896 /* KeyValDatabase.m in Sources */,
 				78659C39185BAD9B00B2B19C /* Template.cpp in Sources */,
 				7861BFEC1834ED5D00B2A896 /* CCSoomlaNdkBridge.cpp in Sources */,
+				78659C5B185BB69000B2B19C /* Credits.cpp in Sources */,
 				7861C07D1834ED7800B2A896 /* PurchaseType.m in Sources */,
 				7861C0731834ED7800B2A896 /* UpgradeVG.m in Sources */,
 				7861BFF31834ED5D00B2A896 /* CCNonConsumableItem.cpp in Sources */,

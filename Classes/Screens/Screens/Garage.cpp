@@ -1,7 +1,7 @@
-#ifndef CONST_SPLASHSCREEN
-#define CONST_SPLASHSCREEN
+#ifndef CONST_GARAGESCREEN
+#define CONST_GARAGESCREEN
 
-#include "SplashScreen.h"
+#include "Garage.h"
 
 // ===========================================================
 // Inner Classes
@@ -19,19 +19,19 @@
 // Constructors
 // ===========================================================
 
-SplashScreen::~SplashScreen()
+Garage::~Garage()
 {
 }
 
-SplashScreen::SplashScreen()
+Garage::Garage()
 {
-
 }
 
-SplashScreen* SplashScreen::create()
+Garage* Garage::create()
 {
-    SplashScreen* screen = new SplashScreen();
+    Garage* screen = new Garage();
     screen->autorelease();
+    screen->retain();
     
     return screen;
 }
@@ -44,27 +44,27 @@ SplashScreen* SplashScreen::create()
 // Override Methods
 // ===========================================================
 
-void SplashScreen::onEnter()
+void Garage::onEnter()
 {
     Screen::onEnter();
 }
 
-void SplashScreen::onExit()
+void Garage::onExit()
 {
     Screen::onExit();
 }
 
-void SplashScreen::onEnterTransitionDidFinish()
+void Garage::onEnterTransitionDidFinish()
 {
     Screen::onEnterTransitionDidFinish();
 }
 
-void SplashScreen::onExitTransitionDidStart()
+void Garage::onExitTransitionDidStart()
 {
     Screen::onExitTransitionDidStart();
 }
 
-void SplashScreen::update(float pDeltaTime)
+void Garage::update(float pDeltaTime)
 {
     Screen::update(pDeltaTime);
 }

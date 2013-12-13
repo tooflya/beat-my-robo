@@ -1,7 +1,7 @@
-#ifndef CONST_SPLASHSCREEN
-#define CONST_SPLASHSCREEN
+#ifndef CONST_LANGUAGESSCREEN
+#define CONST_LANGUAGESSCREEN
 
-#include "SplashScreen.h"
+#include "Languages.h"
 
 // ===========================================================
 // Inner Classes
@@ -19,19 +19,19 @@
 // Constructors
 // ===========================================================
 
-SplashScreen::~SplashScreen()
+Languages::~Languages()
 {
 }
 
-SplashScreen::SplashScreen()
+Languages::Languages()
 {
-
 }
 
-SplashScreen* SplashScreen::create()
+Languages* Languages::create()
 {
-    SplashScreen* screen = new SplashScreen();
+    Languages* screen = new Languages();
     screen->autorelease();
+    screen->retain();
     
     return screen;
 }
@@ -44,27 +44,27 @@ SplashScreen* SplashScreen::create()
 // Override Methods
 // ===========================================================
 
-void SplashScreen::onEnter()
+void Languages::onEnter()
 {
     Screen::onEnter();
 }
 
-void SplashScreen::onExit()
+void Languages::onExit()
 {
     Screen::onExit();
 }
 
-void SplashScreen::onEnterTransitionDidFinish()
+void Languages::onEnterTransitionDidFinish()
 {
     Screen::onEnterTransitionDidFinish();
 }
 
-void SplashScreen::onExitTransitionDidStart()
+void Languages::onExitTransitionDidStart()
 {
     Screen::onExitTransitionDidStart();
 }
 
-void SplashScreen::update(float pDeltaTime)
+void Languages::update(float pDeltaTime)
 {
     Screen::update(pDeltaTime);
 }

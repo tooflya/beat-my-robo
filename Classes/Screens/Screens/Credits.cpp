@@ -1,7 +1,7 @@
-#ifndef CONST_SPLASHSCREEN
-#define CONST_SPLASHSCREEN
+#ifndef CONST_CREDITSSCREEN
+#define CONST_CREDITSSCREEN
 
-#include "SplashScreen.h"
+#include "Credits.h"
 
 // ===========================================================
 // Inner Classes
@@ -19,19 +19,19 @@
 // Constructors
 // ===========================================================
 
-SplashScreen::~SplashScreen()
+Credits::~Credits()
 {
 }
 
-SplashScreen::SplashScreen()
+Credits::Credits()
 {
-
 }
 
-SplashScreen* SplashScreen::create()
+Credits* Credits::create()
 {
-    SplashScreen* screen = new SplashScreen();
+    Credits* screen = new Credits();
     screen->autorelease();
+    screen->retain();
     
     return screen;
 }
@@ -44,27 +44,27 @@ SplashScreen* SplashScreen::create()
 // Override Methods
 // ===========================================================
 
-void SplashScreen::onEnter()
+void Credits::onEnter()
 {
     Screen::onEnter();
 }
 
-void SplashScreen::onExit()
+void Credits::onExit()
 {
     Screen::onExit();
 }
 
-void SplashScreen::onEnterTransitionDidFinish()
+void Credits::onEnterTransitionDidFinish()
 {
     Screen::onEnterTransitionDidFinish();
 }
 
-void SplashScreen::onExitTransitionDidStart()
+void Credits::onExitTransitionDidStart()
 {
     Screen::onExitTransitionDidStart();
 }
 
-void SplashScreen::update(float pDeltaTime)
+void Credits::update(float pDeltaTime)
 {
     Screen::update(pDeltaTime);
 }
