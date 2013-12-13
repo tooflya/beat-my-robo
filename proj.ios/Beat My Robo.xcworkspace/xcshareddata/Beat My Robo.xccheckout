@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>933E2E08-C688-42D7-8679-43C221885073</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Beat My Robo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>39B942DD-15CF-4951-8183-CCBEC0A96A08</key>
+		<string>ssh://github.com/tooflya/beat-my-robo.git</string>
+		<key>5615DAE1-A63F-4B45-A6A0-A095FC3B0CB8</key>
+		<string>ssh://github.com/vedi/jansson.git</string>
+		<key>735342DF-DBE8-40CF-B93B-401D8CF2CC51</key>
+		<string>ssh://github.com/soomla/ios-store.git</string>
+		<key>89D8052C-0475-4F35-BB9F-E48779445AF2</key>
+		<string>ssh://github.com/soomla/cocos2dx-store.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>proj.ios/Beat My Robo.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>39B942DD-15CF-4951-8183-CCBEC0A96A08</key>
+		<string>../..</string>
+		<key>5615DAE1-A63F-4B45-A6A0-A095FC3B0CB8</key>
+		<string>../../../../external/jansson</string>
+		<key>735342DF-DBE8-40CF-B93B-401D8CF2CC51</key>
+		<string>../../../../extensions/cocos2dx-store/submodules/ios-store</string>
+		<key>89D8052C-0475-4F35-BB9F-E48779445AF2</key>
+		<string>../../../../extensions/cocos2dx-store</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/tooflya/beat-my-robo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>39B942DD-15CF-4951-8183-CCBEC0A96A08</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>39B942DD-15CF-4951-8183-CCBEC0A96A08</string>
+			<key>IDESourceControlWCCName</key>
+			<string>beat-my-robo</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>89D8052C-0475-4F35-BB9F-E48779445AF2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cocos2dx-store</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>735342DF-DBE8-40CF-B93B-401D8CF2CC51</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios-store</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5615DAE1-A63F-4B45-A6A0-A095FC3B0CB8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>jansson</string>
+		</dict>
+	</array>
+</dict>
+</plist>

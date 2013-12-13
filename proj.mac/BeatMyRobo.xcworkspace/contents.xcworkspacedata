@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:Project Birds.xcodeproj">
+      location = "group:BeatMyRobo.xcodeproj">
    </FileRef>
 </Workspace>
