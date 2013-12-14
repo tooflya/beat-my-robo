@@ -65,7 +65,7 @@ static AppDelegate s_sharedApplication;
     
     [[UIApplication sharedApplication] setStatusBarHidden: YES];
     
-    [__glView setMultipleTouchEnabled:YES];
+    [__glView setMultipleTouchEnabled:NO];
     
     NSString* deviceType = machineName();
     NSRange match = [deviceType rangeOfString: @"iPod"];

@@ -28,17 +28,25 @@ SpriteBatch::SpriteBatch()
 {
 }
 
-SpriteBatch* SpriteBatch::create(const char* pTextureAtlas)
+SpriteBatch* SpriteBatch::create(const char* pTextureAtlas, CCNode* pParent, bool pFastRendering)
 {
 	#if CC_PRELOAD_LEVEL <= CC_PRELOAD_NOTHING
     CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile(ccsf("%s%s", pTextureAtlas, ".plist"));
 	#endif
 
-    SpriteBatch* entity = new SpriteBatch();
-    entity->initWithFile(ccsf("%s%s", pTextureAtlas, Options::TEXTURES_EXTENSION), 10);
-    entity->autorelease();
+    SpriteBatch* spriteBatch = new SpriteBatch();
+    spriteBatch->initWithFile(ccsf("%s%s", pTextureAtlas, Options::TEXTURES_EXTENSION), 10);
+    spriteBatch->autorelease();
     
-    return entity;
+    if(pFastRendering)
+    {
+		ccBlendFunc bf = {GL_ONE, GL_ZERO};
+		spriteBatch->setBlendFunc(bf);
+    }
+    
+    pParent->addChild(spriteBatch);
+    
+    return spriteBatch;
 }
 
 // ===========================================================

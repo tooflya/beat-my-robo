@@ -31,6 +31,8 @@ ScreenManager::ScreenManager() :
 	mCurrentScreenIndex(0)
 	{
 		this->generate();
+        
+        this->set(Screen::SCREEN_MENU);
 	}
 
 ScreenManager* ScreenManager::create()

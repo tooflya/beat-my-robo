@@ -182,7 +182,7 @@ void Text::setPosition(float pX, float pY)
 
 void Text::changeLanguage()
 {
-    if(this->mId != -1 && this->mId >= 1 && this->getParent())
+    if(this->mId != -1 && this->mId >= 0 && this->getParent())
     {
         this->setString(Options::TEXTES_HOLDER[this->mId].string);
         this->setFontSize(Utils::coord(Options::TEXTES_HOLDER[this->mId].size));

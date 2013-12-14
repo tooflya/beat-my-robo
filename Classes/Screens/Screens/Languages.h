@@ -18,6 +18,20 @@ class Languages : public Screen
         // Fields
         // ===========================================================
     
+        SpriteBatch* mSpriteBatch1;
+        SpriteBatch* mSpriteBatch2;
+        SpriteBatch* mSpriteBatch3;
+        SpriteBatch* mSpriteBatch4;
+    
+        Entity* mBackground;
+        Entity* mBackgroundDecoration;
+        Entity* mLanguageIndicator;
+
+        Button* mLanguages[10];
+        Button* mBackButton;
+    
+        Text* mTextes[10];
+    
         // ===========================================================
         // Constructors
         // ===========================================================
@@ -81,7 +95,9 @@ class Languages : public Screen
         // ===========================================================
         // Methods
         // ===========================================================
-        
+    
+        void onTouchButtonsCallback(const int pAction, const int pID);
+    
         // ===========================================================
         // Override Methods
         // ===========================================================
@@ -93,6 +109,8 @@ class Languages : public Screen
         void onExitTransitionDidStart();
     
         void update(float pDeltaTime);
+    
+        void keyBackClicked(bool pSound);
 };
 
 #endif

@@ -18,6 +18,24 @@ class Menu : public Screen
         // Fields
         // ===========================================================
     
+        SpriteBatch* mSpriteBatch1;
+        SpriteBatch* mSpriteBatch2;
+        SpriteBatch* mSpriteBatch3;
+    
+        Entity* mBackground;
+        Entity* mBackgroundDecoration1;
+        Entity* mBackgroundDecoration2;
+        Entity* mLanguageIndicator;
+    
+        Button* mPlayButton;
+        Button* mSettingsButton;
+        Button* mCreditsButton;
+        Button* mMusicButton;
+        Button* mSoundButton;
+        Button* mTwitterButton;
+        Button* mFacebookButton;
+        Button* mLanguageButton;
+    
         // ===========================================================
         // Constructors
         // ===========================================================
@@ -44,6 +62,8 @@ class Menu : public Screen
         // ===========================================================
         // Fields
         // ===========================================================
+    
+        bool mSettingsShowed;
 
         // ===========================================================
         // Constructors
@@ -52,7 +72,12 @@ class Menu : public Screen
         // ===========================================================
         // Methods
         // ===========================================================
-        
+    
+        void settingsAnimation();
+
+        void checkMusic();
+        void checkSound();
+    
         // ===========================================================
         // Override Methods
         // ===========================================================
@@ -81,6 +106,8 @@ class Menu : public Screen
         // ===========================================================
         // Methods
         // ===========================================================
+    
+        void onTouchButtonsCallback(const int pAction, const int pID);
         
         // ===========================================================
         // Override Methods

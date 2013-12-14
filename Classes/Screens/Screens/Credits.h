@@ -18,6 +18,23 @@ class Credits : public Screen
         // Fields
         // ===========================================================
     
+        SpriteBatch* mSpriteBatch1;
+        SpriteBatch* mSpriteBatch2;
+        SpriteBatch* mSpriteBatch3;
+        SpriteBatch* mSpriteBatch4;
+    
+        Entity* mBackground;
+        Entity* mGameName;
+        Entity* mCompanyName;
+        Entity* mBackgroundDecoration1;
+        Entity* mBackgroundDecoration2;
+    
+        Button* mBackButton;
+    
+        Text* mText[13];
+    
+        CCLayer* mList;
+    
         // ===========================================================
         // Constructors
         // ===========================================================
@@ -81,7 +98,9 @@ class Credits : public Screen
         // ===========================================================
         // Methods
         // ===========================================================
-        
+    
+        void onTouchButtonsCallback(const int pAction, const int pID);
+    
         // ===========================================================
         // Override Methods
         // ===========================================================
@@ -93,6 +112,8 @@ class Credits : public Screen
         void onExitTransitionDidStart();
     
         void update(float pDeltaTime);
+    
+        void keyBackClicked(bool pSound);
 };
 
 #endif

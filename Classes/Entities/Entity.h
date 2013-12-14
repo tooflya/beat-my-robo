@@ -100,6 +100,8 @@ class Entity : public CCSprite, public Touchable
         const char* mTextureFileName;
     
         CCPoint mStartTouchPoint;
+    
+        bool mScaleAnimation;
 
         // ===========================================================
         // Constructors
@@ -271,6 +273,8 @@ class Entity : public CCSprite, public Touchable
         const char* getTextureFileName();
 
         void setAlphaParent(bool pIsAlphaParent);
+    
+        void setScaleAnimation();
         
         // ===========================================================
         // Override Methods

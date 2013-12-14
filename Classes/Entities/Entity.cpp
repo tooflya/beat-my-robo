@@ -54,6 +54,8 @@ void Entity::constructor(const char* pszFileName, int pHorizontalFramesCount, in
     this->mBatchEntityManager = NULL;
 
     this->mAlphaParent = false;
+    
+    this->mScaleAnimation = false;
 
     /**
      *
@@ -907,7 +909,14 @@ bool Entity::ccTouchBegan(CCTouch* touch, CCEvent* event)
     {
         this->mWasTouched = true;
 
-        this->runAction(CCScaleTo::create(this->mAnimationScaleDownTime, (this->mAnimationScaleUpFactor - this->mAnimationScaleDownFactor)));
+        if(this->mScaleAnimation)
+        {
+            this->runAction(CCScaleTo::create(this->mAnimationScaleDownTime, (this->mAnimationScaleUpFactor - this->mAnimationScaleDownFactor)));
+        }
+        else
+        {
+            this->nextFrameIndex();
+        }
 
         return true;
     }
@@ -917,14 +926,23 @@ bool Entity::ccTouchBegan(CCTouch* touch, CCEvent* event)
 
 void Entity::ccTouchMoved(CCTouch* touch, CCEvent* event)
 {
-    if(!containsTouchLocation(touch) || abs(ccpDistance(touch->getLocation(), this->mStartTouchPoint)) >= Utils::coord(30))
+    if(!containsTouchLocation(touch) /*|| abs(ccpDistance(touch->getLocation(), this->mStartTouchPoint)) >= Utils::coord(30)*/)
     {
         if(this->mWasTouched)
         {
-            if(this->getScale() < this->mAnimationScaleUpFactor)
+            if(this->mScaleAnimation)
             {
-                this->runAction(CCScaleTo::create(this->mAnimationScaleUpTime, this->mAnimationScaleUpFactor));
-
+                if(this->getScale() < this->mAnimationScaleUpFactor)
+                {
+                    this->runAction(CCScaleTo::create(this->mAnimationScaleUpTime, this->mAnimationScaleUpFactor));
+                    
+                    this->mWasTouched = false;
+                }
+            }
+            else
+            {
+                this->previousFrameIndex();
+                
                 this->mWasTouched = false;
             }
         }
@@ -935,9 +953,16 @@ void Entity::ccTouchEnded(CCTouch* touch, CCEvent* event)
 {
     if(this->mWasTouched)
     {
+        if(this->mScaleAnimation)
+        {
+            this->runAction(CCScaleTo::create(this->mAnimationScaleUpTime, this->mAnimationScaleUpFactor));
+        }
+        else
+        {
+            this->previousFrameIndex();
+        }
+        
         this->onTouch(touch, event);
-
-        this->runAction(CCScaleTo::create(this->mAnimationScaleUpTime, this->mAnimationScaleUpFactor));
     }
 
     this->mWasTouched = false;
@@ -945,7 +970,7 @@ void Entity::ccTouchEnded(CCTouch* touch, CCEvent* event)
 
 bool Entity::containsTouchLocation(CCTouch* touch)
 {
-    return CCRectMake(-this->mFrameWidth/ 2, -this->mFrameHeight / 2, this->mFrameWidth, this->mFrameHeight).containsPoint(this->convertTouchToNodeSpaceAR(touch));
+    return CCRectMake(-this->mFrameWidth / 2, -this->mFrameHeight / 2, this->mFrameWidth, this->mFrameHeight).containsPoint(this->convertTouchToNodeSpaceAR(touch));
 }
 
 /**
@@ -1117,6 +1142,11 @@ void Entity::setOpacity(GLubyte pOpaquee)
             child->setOpacity(pOpaquee);
         }
     }
+}
+
+void Entity::setScaleAnimation()
+{
+    this->mScaleAnimation = true;
 }
 
 #endif

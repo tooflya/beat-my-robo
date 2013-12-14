@@ -18,6 +18,18 @@ class Garage : public Screen
         // Fields
         // ===========================================================
     
+        SpriteBatch* mSpriteBatch1;
+        SpriteBatch* mSpriteBatch2;
+        SpriteBatch* mSpriteBatch3;
+    
+        Entity* mBackground;
+        Entity* mResourcesIcons[2];
+        Entity* mResourcesBackgrounds[2];
+    
+        Button* mBackButton;
+        Button* mPlayButton;
+        Button* mResourcesPluses[2];
+    
         // ===========================================================
         // Constructors
         // ===========================================================
@@ -81,7 +93,9 @@ class Garage : public Screen
         // ===========================================================
         // Methods
         // ===========================================================
-        
+    
+        void onTouchButtonsCallback(const int pAction, const int pID);
+    
         // ===========================================================
         // Override Methods
         // ===========================================================
@@ -93,6 +107,8 @@ class Garage : public Screen
         void onExitTransitionDidStart();
     
         void update(float pDeltaTime);
+    
+        void keyBackClicked(bool pSound);
 };
 
 #endif

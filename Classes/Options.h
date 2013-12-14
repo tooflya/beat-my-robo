@@ -142,7 +142,50 @@ class Options
         static const int BUTTONS_ACTION_ONBEGIN = 1;
         static const int BUTTONS_ACTION_ONEND = 2;
 
-        static const int BUTTONS_ID__BACK = 1001;
+        static const int BUTTONS_ID_BACK = 1001;
+        static const int BUTTONS_ID_MENU_PLAY = 2001;
+        static const int BUTTONS_ID_MENU_SETTINGS = 2002;
+        static const int BUTTONS_ID_MENU_CREDITS = 2003;
+        static const int BUTTONS_ID_MENU_SOUND = 2004;
+        static const int BUTTONS_ID_MENU_MUSIC = 2005;
+        static const int BUTTONS_ID_MENU_TWITTER = 2006;
+        static const int BUTTONS_ID_MENU_FACEBOOK = 2007;
+        static const int BUTTONS_ID_MENU_LANGUAGE = 2008;
+        static const int BUTTONS_ID_LANGUAGE_L_EN = 2101;
+        static const int BUTTONS_ID_LANGUAGE_L_RU = 2102;
+        static const int BUTTONS_ID_LANGUAGE_L_DE = 2103;
+        static const int BUTTONS_ID_LANGUAGE_L_ES = 2104;
+        static const int BUTTONS_ID_LANGUAGE_L_FR = 2105;
+        static const int BUTTONS_ID_LANGUAGE_L_NL = 2106;
+        static const int BUTTONS_ID_LANGUAGE_L_IT = 2107;
+        static const int BUTTONS_ID_LANGUAGE_L_JP = 2108;
+        static const int BUTTONS_ID_LANGUAGE_L_KR = 2109;
+        static const int BUTTONS_ID_LANGUAGE_L_CN = 2110;
+        static const int BUTTONS_ID_GARAGE_PLAY = 2201;
+    
+        static Textes TEXT_LANGUAGE_L_EN;
+        static Textes TEXT_LANGUAGE_L_RU;
+        static Textes TEXT_LANGUAGE_L_DE;
+        static Textes TEXT_LANGUAGE_L_ES;
+        static Textes TEXT_LANGUAGE_L_FR;
+        static Textes TEXT_LANGUAGE_L_NL;
+        static Textes TEXT_LANGUAGE_L_IT;
+        static Textes TEXT_LANGUAGE_L_JP;
+        static Textes TEXT_LANGUAGE_L_KR;
+        static Textes TEXT_LANGUAGE_L_CN;
+        static Textes TEXT_CREDITS_STRING_1;
+        static Textes TEXT_CREDITS_STRING_2;
+        static Textes TEXT_CREDITS_STRING_3;
+        static Textes TEXT_CREDITS_STRING_4;
+        static Textes TEXT_CREDITS_STRING_5;
+        static Textes TEXT_CREDITS_STRING_6;
+        static Textes TEXT_CREDITS_STRING_7;
+        static Textes TEXT_CREDITS_STRING_8;
+        static Textes TEXT_CREDITS_STRING_9;
+        static Textes TEXT_CREDITS_STRING_10;
+        static Textes TEXT_CREDITS_STRING_11;
+        static Textes TEXT_CREDITS_STRING_12;
+        static Textes TEXT_CREDITS_STRING_13;
 
         // ===========================================================
         // Fields

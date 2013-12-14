@@ -18,6 +18,19 @@ class Loading : public Screen
         // Fields
         // ===========================================================
     
+        SpriteBatch* mSpriteBatch1;
+        SpriteBatch* mSpriteBatch2;
+        SpriteBatch* mSpriteBatch3;
+    
+        Entity* mBackground;
+        Entity* mLogo;
+        Entity* mPreloader;
+    
+        bool mLoading;
+    
+        float mLoadingTime;
+        float mLoadingTimeElapsed;
+    
         // ===========================================================
         // Constructors
         // ===========================================================
@@ -27,6 +40,8 @@ class Loading : public Screen
         // ===========================================================
         // Methods
         // ===========================================================
+    
+        void onLoadingComplete();
 
         // ===========================================================
         // Override Methods
