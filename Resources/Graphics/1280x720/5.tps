@@ -172,7 +172,8 @@
         <key>fileList</key>
         <array>
             <filename>../../Graphics Sources/start_preloader_name@2x.png</filename>
-            <filename>../../Graphics Sources/about_logo@2x.png</filename>
+            <filename>../../Graphics Sources/info_menu_bg_logo@2x.png</filename>
+            <filename>../../Graphics Sources/lvl_preloader_portal@2x.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

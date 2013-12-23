@@ -170,7 +170,25 @@
             <false/>
         </struct>
         <key>fileList</key>
-        <array/>
+        <array>
+            <filename>../../Graphics Sources/robo_menu_buy_gold_btn1@2x.png</filename>
+            <filename>../../Graphics Sources/robo_menu_buy_gold_btn2@2x.png</filename>
+            <filename>../../Graphics Sources/robo_menu_buy_gold_btn3@2x.png</filename>
+            <filename>../../Graphics Sources/robo_menu_buy_gold_btn4@2x.png</filename>
+            <filename>../../Graphics Sources/robo_menu_convert_btn1@2x.png</filename>
+            <filename>../../Graphics Sources/robo_menu_convert_btn2@2x.png</filename>
+            <filename>../../Graphics Sources/robo_menu_convert_btn3@2x.png</filename>
+            <filename>../../Graphics Sources/robo_menu_convert_btn4@2x.png</filename>
+            <filename>../../Graphics Sources/robo_menu_convert_picture@2x.png</filename>
+            <filename>../../Graphics Sources/robo_menu_popup_btn_close@2x.png</filename>
+            <filename>../../Graphics Sources/robo_menu_popup@2x.png</filename>
+            <filename>../../Graphics Sources/robo_menu_convert_textbox@2x.png</filename>
+            <filename>../../Graphics Sources/robo_menu_stat_popup_btn_upgrade@2x.png</filename>
+            <filename>../../Graphics Sources/robo_menu_stat_popup_ico_count@2x.png</filename>
+            <filename>../../Graphics Sources/robo_menu_stat_popup_ico_stats@2x.png</filename>
+            <filename>../../Graphics Sources/robo_menu_stat_popup_bg_robo_name@2x.png</filename>
+            <filename>../../Graphics Sources/robo_menu_gold_picture@2x.png</filename>
+        </array>
         <key>ignoreFileList</key>
         <array/>
         <key>replaceList</key>

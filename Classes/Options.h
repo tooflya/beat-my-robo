@@ -162,6 +162,20 @@ class Options
         static const int BUTTONS_ID_LANGUAGE_L_KR = 2109;
         static const int BUTTONS_ID_LANGUAGE_L_CN = 2110;
         static const int BUTTONS_ID_GARAGE_PLAY = 2201;
+        static const int BUTTONS_ID_GARAGE_MOVE_LEFT = 2202;
+        static const int BUTTONS_ID_GARAGE_MOVE_RIGHT = 2203;
+        static const int BUTTONS_ID_GARAGE_GET_GOLD = 2204;
+        static const int BUTTONS_ID_GARAGE_GET_SILVER = 2205;
+        static const int BUTTONS_ID_GARAGE_SELECT = 2206;
+        static const int BUTTONS_ID_GET_GOLD_1 = 2301;
+        static const int BUTTONS_ID_GET_GOLD_2 = 2302;
+        static const int BUTTONS_ID_GET_GOLD_3 = 2303;
+        static const int BUTTONS_ID_GET_GOLD_4 = 2304;
+        static const int BUTTONS_ID_GET_SILVER_1 = 2401;
+        static const int BUTTONS_ID_GET_SILVER_2 = 2402;
+        static const int BUTTONS_ID_GET_SILVER_3 = 2403;
+        static const int BUTTONS_ID_GET_SILVER_4 = 2404;
+        static const int BUTTONS_ID_CREDITS_PRIVACY_POLICY = 2501;
     
         static Textes TEXT_LANGUAGE_L_EN;
         static Textes TEXT_LANGUAGE_L_RU;
@@ -186,6 +200,12 @@ class Options
         static Textes TEXT_CREDITS_STRING_11;
         static Textes TEXT_CREDITS_STRING_12;
         static Textes TEXT_CREDITS_STRING_13;
+        static Textes TEXT_BUY_GOLD;
+        static Textes TEXT_BUY_SILVER;
+        static Textes TEXT_GARAGE_UNLOCK_CHARACTER;
+        static Textes TEXT_GARAGE_SELECT_CHARACTER;
+        static Textes TEXT_GARAGE_UNLOCK_CHARACTER_BALOON;
+        static Textes TEXT_CREDITS_PRIVACY_POLICY;
 
         // ===========================================================
         // Fields

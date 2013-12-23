@@ -30,6 +30,7 @@ class Credits : public Screen
         Entity* mBackgroundDecoration2;
     
         Button* mBackButton;
+        Button* mPrivacyPolicyButton;
     
         Text* mText[13];
     

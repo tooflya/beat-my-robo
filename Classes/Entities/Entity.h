@@ -223,8 +223,8 @@ class Entity : public CCSprite, public Touchable
 
         virtual void setCurrentFrameIndex(int pIndex);
 
-        void previousFrameIndex();
-        void nextFrameIndex();
+        virtual void previousFrameIndex();
+        virtual void nextFrameIndex();
 
         void changeTexture(Texture* pTexture);
     

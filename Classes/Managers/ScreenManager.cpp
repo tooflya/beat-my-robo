@@ -9,6 +9,8 @@
 #include "Garage.h"
 #include "Languages.h"
 #include "Credits.h"
+#include "Loader.h"
+#include "Game.h"
 
 // ===========================================================
 // Inner Classes
@@ -32,7 +34,8 @@ ScreenManager::ScreenManager() :
 	{
 		this->generate();
         
-        this->set(Screen::SCREEN_MENU);
+        //this->set(Screen::SCREEN_MENU);
+        this->set(Screen::SCREEN_GAME);
 	}
 
 ScreenManager* ScreenManager::create()
@@ -74,6 +77,8 @@ void ScreenManager::generate()
     this->mScreens[Screen::SCREEN_GARAGE] = Garage::create();
     this->mScreens[Screen::SCREEN_CREDITS] = Credits::create();
     this->mScreens[Screen::SCREEN_LANGUAGES] = Languages::create();
+    this->mScreens[Screen::SCREEN_LOADER] = Loader::create();
+    this->mScreens[Screen::SCREEN_GAME] = Game::create();
 }
 
 void ScreenManager::set(int pIndex)

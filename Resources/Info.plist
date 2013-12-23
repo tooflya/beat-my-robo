@@ -25,14 +25,14 @@
 	<key>CFBundleSignature</key>
 	<string>AAPL</string>
 	<key>CFBundleVersion</key>
-	<string>C</string>
+	<string>49F</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.games</string>
 	<key>LSRequiresIPhoneOS</key>
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Comic Sans MS.ttf</string>
+		<string>Grilled Cheese.ttf</string>
 	</array>
 	<key>UIPrerenderedIcon</key>
 	<true/>
@@ -53,8 +53,8 @@
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 </dict>
 </plist>

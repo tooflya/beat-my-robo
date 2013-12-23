@@ -147,7 +147,7 @@
             <string></string>
         </struct>
         <key>autoAliasEnabled</key>
-        <true/>
+        <false/>
         <key>trimSpriteNames</key>
         <false/>
         <key>cleanTransparentPixels</key>
@@ -185,6 +185,9 @@
             <filename>../../Graphics Sources/robo_menu_coin_ico_gold@2x.png</filename>
             <filename>../../Graphics Sources/robo_menu_coin_ico_iron@2x.png</filename>
             <filename>../../Graphics Sources/robo_menu_btn_play@2x.png</filename>
+            <filename>../../Graphics Sources/robo_menu_machine_btn_list_sprite@2x.png</filename>
+            <filename>../../Graphics Sources/robo_menu_machine_platform_btn_select@2x.png</filename>
+            <filename>../../Graphics Sources/robo_menu_unlock_dialog_cloud@2x.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

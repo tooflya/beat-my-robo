@@ -30,29 +30,14 @@ class Popup : public CCLayer, public ButtonReceiver
         // Fields
         // ===========================================================
     
-        CCSpriteBatchNode* mSpriteBatch;
-        CCSpriteBatchNode* mSpriteBatch2;
+        SpriteBatch* mSpriteBatch;
 
         CCNode* mParent;
         CCNodeRGBA* mSquare;
 
         Entity* mBackground;
-        Entity* mDarkness;
-        Entity* mIllustration;
     
         Button* mCloseButton;
-    
-        int mShowAnimationCount;
-        int mHideAnimationCount;
-    
-        float mShowAnimationTime;
-        float mShowAnimationTimeElapsed;
-        
-        float mHideAnimationTime;
-        float mHideAnimationTimeElapsed;
-    
-        bool mShowAnimationRunning;
-        bool mHideAnimationRunning;
     
         bool mShowed;
 
@@ -110,7 +95,7 @@ class Popup : public CCLayer, public ButtonReceiver
         // Constructors
         // ===========================================================
     
-        Popup(CCNode* pParent, bool pFirst = true);
+        Popup(CCNode* pParent);
         ~Popup();
 
         // ===========================================================
@@ -132,8 +117,6 @@ class Popup : public CCLayer, public ButtonReceiver
         // ===========================================================
     
         void update(float pDeltaTime);
-
-        void draw();
     
         void onEnter();
         void onExit();

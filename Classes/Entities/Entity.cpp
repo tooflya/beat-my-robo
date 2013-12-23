@@ -680,7 +680,7 @@ void Entity::onDestroy()
 {
     this->setVisible(false);
     
-    // this->removeAllChildrenWithCleanup(true); // TODO: Check his out.
+    // this->removeAllChildrenWithCleanup(true); // TODO: Check this out.
 }
 
 void Entity::setAlphaParent(bool pIsAlphaParent)
@@ -926,7 +926,7 @@ bool Entity::ccTouchBegan(CCTouch* touch, CCEvent* event)
 
 void Entity::ccTouchMoved(CCTouch* touch, CCEvent* event)
 {
-    if(!containsTouchLocation(touch) /*|| abs(ccpDistance(touch->getLocation(), this->mStartTouchPoint)) >= Utils::coord(30)*/)
+    if(!containsTouchLocation(touch))
     {
         if(this->mWasTouched)
         {
@@ -970,7 +970,7 @@ void Entity::ccTouchEnded(CCTouch* touch, CCEvent* event)
 
 bool Entity::containsTouchLocation(CCTouch* touch)
 {
-    return CCRectMake(-this->mFrameWidth / 2, -this->mFrameHeight / 2, this->mFrameWidth, this->mFrameHeight).containsPoint(this->convertTouchToNodeSpaceAR(touch));
+    return CCRectMake(-this->mFrameWidth / 2 * 1.5, -this->mFrameHeight / 2 * 1.5, this->mFrameWidth * 1.5, this->mFrameHeight * 1.5).containsPoint(this->convertTouchToNodeSpaceAR(touch));
 }
 
 /**

@@ -72,7 +72,7 @@ class ScreenManager : CCObject
 		// Fields
 		// ===========================================================
 
-		Screen* mScreens[4];
+		Screen* mScreens[6];
 
 		int mCurrentScreenIndex;
 

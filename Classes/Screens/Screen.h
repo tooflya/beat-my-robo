@@ -8,6 +8,8 @@
 #include "Entity.h"
 #include "Button.h"
 
+#include "Spine.h"
+
 #include "EntityManager.h"
 #include "BatchEntityManager.h"
 
@@ -96,6 +98,8 @@ class Screen : public CCScene, public Touchable, public ButtonReceiver, public C
         static const int SCREEN_GARAGE = 1;
         static const int SCREEN_LANGUAGES = 2;
         static const int SCREEN_CREDITS = 3;
+        static const int SCREEN_LOADER = 4;
+        static const int SCREEN_GAME = 5;
 
         // ===========================================================
         // Fields

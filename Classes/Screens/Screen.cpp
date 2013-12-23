@@ -113,7 +113,7 @@ void Screen::keyBackClicked(bool pSound)
     #if CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID
     if(Options::SOUND_ENABLE && pSound)
     {
-        SimpleAudioEngine::sharedEngine()->playEffect(Options::SOUND_TAP);
+        //SimpleAudioEngine::sharedEngine()->playEffect(Options::SOUND_TAP);
     }
     #endif
 }

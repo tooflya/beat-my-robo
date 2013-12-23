@@ -60,11 +60,11 @@ int Options::BUILD = 0;
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_MAC || CC_TARGET_PLATFORM == CC_PLATFORM_LINUX)
 
-const char* Options::FONT = "Comic Sans MS";
+const char* Options::FONT = "GrilledCheese BTN";
 
 #else
 
-const char* Options::FONT = "Fonts/Comic Sans MS.ttf";
+const char* Options::FONT = "Fonts/Grilled Cheese.ttf";
 
 #endif
 
@@ -97,6 +97,12 @@ Textes Options::TEXT_CREDITS_STRING_10 = { "", FONT, 0, 19 };
 Textes Options::TEXT_CREDITS_STRING_11 = { "", FONT, 0, 20 };
 Textes Options::TEXT_CREDITS_STRING_12 = { "", FONT, 0, 21 };
 Textes Options::TEXT_CREDITS_STRING_13 = { "", FONT, 0, 22 };
+Textes Options::TEXT_BUY_GOLD = { "", FONT, 32, 23 };
+Textes Options::TEXT_BUY_SILVER = { "", FONT, 32, 24 };
+Textes Options::TEXT_GARAGE_UNLOCK_CHARACTER = { "", FONT, 48, 25 };
+Textes Options::TEXT_GARAGE_SELECT_CHARACTER = { "", FONT, 48, 26 };
+Textes Options::TEXT_GARAGE_UNLOCK_CHARACTER_BALOON = { "", FONT, 46, 27 };
+Textes Options::TEXT_CREDITS_PRIVACY_POLICY = { "", FONT, 46, 28 };
 
 // ===========================================================
 // Fields
@@ -200,6 +206,15 @@ void Options::changeLanguage()
             
         TEXT_CREDITS_STRING_13.string = "Aleksandr Lysenko";
         TEXT_CREDITS_STRING_13.size = 42;
+            
+        TEXT_BUY_GOLD.string = "Any purchase will remove ADS!";
+        TEXT_BUY_SILVER.string = "You can convert your gold to iron!";
+            
+        TEXT_GARAGE_UNLOCK_CHARACTER.string = "unlock";
+        TEXT_GARAGE_SELECT_CHARACTER.string = "select";
+            
+        TEXT_GARAGE_UNLOCK_CHARACTER_BALOON.string = "You can unlock me just for";
+        TEXT_CREDITS_PRIVACY_POLICY.string = "Privacy Policy";
         break;
         case 1:
         Options::TEXT_LANGUAGE_L_EN.string = "английский";
@@ -251,6 +266,15 @@ void Options::changeLanguage()
             
         TEXT_CREDITS_STRING_13.string = "Александр Лысенко";
         TEXT_CREDITS_STRING_13.size = 42;
+            
+        TEXT_BUY_GOLD.string = "Any purchase will remove ADS!";
+        TEXT_BUY_SILVER.string = "You can convert your gold to iron!";
+            
+        TEXT_GARAGE_UNLOCK_CHARACTER.string = "открыть";
+        TEXT_GARAGE_SELECT_CHARACTER.string = "выбрать";
+            
+        TEXT_GARAGE_UNLOCK_CHARACTER_BALOON.string = "";
+        TEXT_CREDITS_PRIVACY_POLICY.string = "1";
         break;
     }
     
@@ -278,8 +302,14 @@ void Options::changeLanguage()
     TEXTES_HOLDER[20] = TEXT_CREDITS_STRING_11;
     TEXTES_HOLDER[21] = TEXT_CREDITS_STRING_12;
     TEXTES_HOLDER[22] = TEXT_CREDITS_STRING_13;
+    TEXTES_HOLDER[23] = TEXT_BUY_GOLD;
+    TEXTES_HOLDER[24] = TEXT_BUY_SILVER;
+    TEXTES_HOLDER[25] = TEXT_GARAGE_UNLOCK_CHARACTER;
+    TEXTES_HOLDER[26] = TEXT_GARAGE_SELECT_CHARACTER;
+    TEXTES_HOLDER[27] = TEXT_GARAGE_UNLOCK_CHARACTER_BALOON;
+    TEXTES_HOLDER[28] = TEXT_CREDITS_PRIVACY_POLICY;
     
-    for(int i = 0; i <= 22; i++)
+    for(int i = 0; i <= 28; i++)
     {
         if(Text::TEXTES[i] != NULL)
         {

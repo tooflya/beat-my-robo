@@ -174,8 +174,11 @@
             <filename>../../Graphics Sources/info_menu_bg_deco3@2x.png</filename>
             <filename>../../Graphics Sources/lang_menu_bg_deco4@2x.png</filename>
             <filename>../../Graphics Sources/main_menu_bg_deco1@2x.png</filename>
-            <filename>../../Graphics Sources/main_menu_deco2@2x.png</filename>
             <filename>../../Graphics Sources/main_menu_btn_play@2x.png</filename>
+            <filename>../../Graphics Sources/robo_menu_machine@2x.png</filename>
+            <filename>../../Graphics Sources/robo_menu_machine_platform@2x.png</filename>
+            <filename>../../Graphics Sources/robo_test@2x.png</filename>
+            <filename>../../Graphics Sources/robo_menu_machine_platform_char_shadow@2x.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

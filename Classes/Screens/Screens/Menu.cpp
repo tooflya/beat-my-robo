@@ -27,12 +27,13 @@ Menu::Menu() :
 mSettingsShowed(false)
 {
     this->mSpriteBatch1 = SpriteBatch::create("TextureAtlas1", this, true);
+    this->mSpriteBatch5 = SpriteBatch::create("TextureAtlas5", this, false);
     this->mSpriteBatch2 = SpriteBatch::create("TextureAtlas2", this, false);
     this->mSpriteBatch3 = SpriteBatch::create("TextureAtlas3", this, false);
 
     this->mBackground = Entity::create("start_preloader_bg@2x.png", this->mSpriteBatch1);
     this->mBackgroundDecoration1 = Entity::create("main_menu_bg_deco1@2x.png", this->mSpriteBatch2);
-    this->mBackgroundDecoration2 = Entity::create("main_menu_deco2@2x.png", this->mSpriteBatch2);
+    this->mBackgroundName = Entity::create("start_preloader_name@2x.png", this->mSpriteBatch5);
 
     this->mPlayButton = Button::create("main_menu_btn_play@2x.png", 2, 1, this->mSpriteBatch2, Options::BUTTONS_ID_MENU_PLAY, this);
     this->mMusicButton = Button::create("main_menu_btn_mfx@2x.png", 2, 2, this->mSpriteBatch3, Options::BUTTONS_ID_MENU_MUSIC, this);
@@ -45,8 +46,8 @@ mSettingsShowed(false)
     this->mLanguageIndicator = Entity::create("main_menu_btn_language_flag_sprite@2x.png", 2, 5, this->mLanguageButton);
 
     this->mBackground->create()->setCenterPosition(Options::CAMERA_CENTER_X, Options::CAMERA_CENTER_Y);
+    this->mBackgroundName->create()->setCenterPosition(Options::CAMERA_CENTER_X, Options::CAMERA_HEIGHT - this->mBackgroundName->getHeight() / 2 - Utils::coord(50));
     this->mBackgroundDecoration1->create()->setCenterPosition(Options::CAMERA_CENTER_X, Utils::coord(500));
-    this->mBackgroundDecoration2->create()->setCenterPosition(Options::CAMERA_CENTER_X, Options::CAMERA_HEIGHT - this->mBackgroundDecoration2->getHeight() / 2);
 
     this->mPlayButton->create()->setCenterPosition(Options::CAMERA_CENTER_X, Options::CAMERA_CENTER_Y);
     this->mSettingsButton->create()->setCenterPosition(Utils::coord(80), Utils::coord(80));
@@ -57,9 +58,6 @@ mSettingsShowed(false)
     this->mFacebookButton->create()->setCenterPosition(Options::CAMERA_WIDTH - Utils::coord(220), Utils::coord(80));
     this->mLanguageButton->create()->setCenterPosition(Options::CAMERA_WIDTH - Utils::coord(360), Utils::coord(80));
     this->mLanguageIndicator->create()->setCenterPosition(this->mLanguageButton->getWidth() / 2, this->mLanguageButton->getHeight() / 2);
-    
-    this->mBackgroundDecoration1->setZOrder(0);
-    this->mBackgroundDecoration2->setZOrder(2);
     
     this->mPlayButton->setZOrder(1);
 }

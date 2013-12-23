@@ -27,8 +27,8 @@ class ScrollLayer : public CCLayer
     {
         this->init();
         
-        this->mHeight = Utils::coord(900);
-        this->mMaxHeight = Utils::coord(900);
+        this->mHeight = Utils::coord(1000);
+        this->mMaxHeight = Utils::coord(1000);
     }
     
     static ScrollLayer* create(CCNode* pParent)
@@ -212,19 +212,25 @@ Credits::Credits()
     this->mBackgroundDecoration1 = Entity::create("info_menu_bg_deco3@2x.png", this->mSpriteBatch2);
     this->mBackgroundDecoration2 = Entity::create("info_menu_bg_deco3@2x.png", this->mSpriteBatch2);
     this->mGameName = Entity::create("start_preloader_name@2x.png", this->mSpriteBatch4);
-    this->mCompanyName = Entity::create("about_logo@2x.png", this->mSpriteBatch4);
+    this->mCompanyName = Entity::create("info_menu_bg_logo@2x.png", this->mSpriteBatch4);
     
     this->mBackButton = Button::create("info_menu_btn_back@2x.png", 2, 1, this->mSpriteBatch3, Options::BUTTONS_ID_BACK, this);
+    this->mPrivacyPolicyButton = Button::create("robo_menu_machine_platform_btn_select@2x.png", 1, 2, this->mSpriteBatch3, Options::BUTTONS_ID_CREDITS_PRIVACY_POLICY, this);
+    
+    this->mPrivacyPolicyButton->setText(Options::TEXT_CREDITS_PRIVACY_POLICY);
+    this->mPrivacyPolicyButton->mText->setZOrder(10);
     
     this->mBackground->create()->setCenterPosition(Options::CAMERA_CENTER_X, Options::CAMERA_CENTER_Y);
     this->mBackgroundDecoration1->create()->setCenterPosition(Options::CAMERA_CENTER_X, this->mBackgroundDecoration1->getHeight() / 2);
     this->mBackgroundDecoration2->create()->setCenterPosition(Options::CAMERA_CENTER_X, Options::CAMERA_HEIGHT - this->mBackgroundDecoration2->getHeight() / 2);
     this->mGameName->create()->setCenterPosition(Options::CAMERA_CENTER_X, Options::CAMERA_CENTER_Y + Utils::coord(200));
-    this->mCompanyName->create()->setCenterPosition(Options::CAMERA_CENTER_X, Options::CAMERA_CENTER_Y - Utils::coord(1100));
+    this->mCompanyName->create()->setCenterPosition(Options::CAMERA_CENTER_X, Options::CAMERA_CENTER_Y - Utils::coord(1200));
     
     this->mBackgroundDecoration2->setScale(-1);
     
     this->mBackButton->create()->setCenterPosition(Utils::coord(80), Utils::coord(80));
+    this->mPrivacyPolicyButton->create()->setCenterPosition(Options::CAMERA_WIDTH - Utils::coord(220), Utils::coord(80));
+    this->mPrivacyPolicyButton->setScale(1.3);
     
     this->mText[0] = Text::create(Options::TEXT_CREDITS_STRING_1, this->mList);
     this->mText[1] = Text::create(Options::TEXT_CREDITS_STRING_2, this->mList);
@@ -300,7 +306,7 @@ void Credits::onEnter()
     Screen::onEnter();
     
     this->mList->setPosition(ccp(0, 0));
-    this->mList->runAction(CCMoveTo::create(10.0, ccp(this->mList->getPosition().x, this->mList->getPosition().y + Utils::coord(800))));
+    this->mList->runAction(CCMoveTo::create(10.0, ccp(this->mList->getPosition().x, this->mList->getPosition().y + Utils::coord(1000))));
     
     this->mText[1]->setString(ccsf(Options::TEXT_CREDITS_STRING_2.string, Options::VERSION));
     this->mText[2]->setString(ccsf(Options::TEXT_CREDITS_STRING_3.string, Options::BUILD));

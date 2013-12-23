@@ -7,7 +7,7 @@
             <key>info_menu_btn_back@2x.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{728,208},{260,130}}</string>
+                <string>{{1050,354},{260,130}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -20,7 +20,7 @@
             <key>main_menu_btn_fb@2x.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{732,2},{260,130}}</string>
+                <string>{{788,358},{260,130}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -33,7 +33,7 @@
             <key>main_menu_btn_info@2x.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,354},{204,102}}</string>
+                <string>{{1556,134},{204,102}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -46,7 +46,7 @@
             <key>main_menu_btn_language@2x.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{470,340},{260,130}}</string>
+                <string>{{526,358},{260,130}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -59,7 +59,7 @@
             <key>main_menu_btn_language_flag_sprite@2x.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{200,350}}</string>
+                <string>{{942,2},{200,350}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -72,7 +72,7 @@
             <key>main_menu_btn_mfx@2x.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{410,2},{204,204}}</string>
+                <string>{{1350,148},{204,204}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -85,7 +85,7 @@
             <key>main_menu_btn_settings@2x.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{466,208},{260,130}}</string>
+                <string>{{1448,2},{260,130}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -98,7 +98,7 @@
             <key>main_menu_btn_sfx@2x.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{204,2},{204,204}}</string>
+                <string>{{1144,148},{204,204}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -111,7 +111,7 @@
             <key>main_menu_btn_tw@2x.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{208,340},{260,130}}</string>
+                <string>{{264,365},{260,130}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -124,7 +124,7 @@
             <key>robo_menu_btn_play@2x.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{204,208},{260,130}}</string>
+                <string>{{2,365},{260,130}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -137,7 +137,7 @@
             <key>robo_menu_coin_bar@2x.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{762,134},{210,59}}</string>
+                <string>{{1312,354},{210,59}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -150,7 +150,7 @@
             <key>robo_menu_coin_btn_plus@2x.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{616,134},{144,72}}</string>
+                <string>{{1312,415},{144,72}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -163,7 +163,7 @@
             <key>robo_menu_coin_ico_gold@2x.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{876,340},{142,83}}</string>
+                <string>{{1556,323},{142,83}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -176,7 +176,7 @@
             <key>robo_menu_coin_ico_iron@2x.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{732,340},{142,83}}</string>
+                <string>{{1556,238},{142,83}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -186,6 +186,45 @@
                 <key>sourceSize</key>
                 <string>{142,83}</string>
             </dict>
+            <key>robo_menu_machine_btn_list_sprite@2x.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{490,2},{450,354}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{450,354}}</string>
+                <key>sourceSize</key>
+                <string>{450,354}</string>
+            </dict>
+            <key>robo_menu_machine_platform_btn_select@2x.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1144,2},{302,144}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{302,144}}</string>
+                <key>sourceSize</key>
+                <string>{302,144}</string>
+            </dict>
+            <key>robo_menu_unlock_dialog_cloud@2x.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{486,361}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{486,361}}</string>
+                <key>sourceSize</key>
+                <string>{486,361}</string>
+            </dict>
         </dict>
         <key>metadata</key>
         <dict>
@@ -194,9 +233,9 @@
             <key>realTextureFileName</key>
             <string>TextureAtlas3.pvr.ccz</string>
             <key>size</key>
-            <string>{1020,472}</string>
+            <string>{1762,497}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:ddd10a4eb1c2c323e690babe64c364bd:af356b4ff7b8f191ddc5c6a9cf85cb7c:f09fb1211140a49faf8860e629fa2051$</string>
+            <string>$TexturePacker:SmartUpdate:9fea1ac85548f52ca7d3d76690ddae0e:caa0b7d1819bc437ee8a0981682dbb51:f09fb1211140a49faf8860e629fa2051$</string>
             <key>textureFileName</key>
             <string>TextureAtlas3.pvr.ccz</string>
         </dict>

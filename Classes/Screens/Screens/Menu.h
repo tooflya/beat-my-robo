@@ -21,10 +21,11 @@ class Menu : public Screen
         SpriteBatch* mSpriteBatch1;
         SpriteBatch* mSpriteBatch2;
         SpriteBatch* mSpriteBatch3;
+        SpriteBatch* mSpriteBatch5;
     
         Entity* mBackground;
+        Entity* mBackgroundName;
         Entity* mBackgroundDecoration1;
-        Entity* mBackgroundDecoration2;
         Entity* mLanguageIndicator;
     
         Button* mPlayButton;

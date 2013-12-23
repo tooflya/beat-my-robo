@@ -23,8 +23,9 @@ class Loading : public Screen
         SpriteBatch* mSpriteBatch3;
     
         Entity* mBackground;
-        Entity* mLogo;
-        Entity* mPreloader;
+        Entity* mBackgroundName;
+    
+        Spine* mPreloader;
     
         bool mLoading;
     

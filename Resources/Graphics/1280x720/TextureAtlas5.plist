@@ -4,31 +4,44 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>about_logo@2x.png</key>
+            <key>info_menu_bg_logo@2x.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{428,2},{345,128}}</string>
+                <string>{{686,419},{361,319}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{345,128}}</string>
+                <string>{{0,0},{361,319}}</string>
                 <key>sourceSize</key>
-                <string>{345,128}</string>
+                <string>{361,319}</string>
+            </dict>
+            <key>lvl_preloader_portal@2x.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{682,781}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{682,781}}</string>
+                <key>sourceSize</key>
+                <string>{682,781}</string>
             </dict>
             <key>start_preloader_name@2x.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{424,388}}</string>
+                <string>{{686,2},{666,415}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{424,388}}</string>
+                <string>{{0,0},{666,415}}</string>
                 <key>sourceSize</key>
-                <string>{424,388}</string>
+                <string>{666,415}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -38,9 +51,9 @@
             <key>realTextureFileName</key>
             <string>TextureAtlas5.pvr.ccz</string>
             <key>size</key>
-            <string>{775,392}</string>
+            <string>{1354,785}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:ff5baf63ed4ee8b2b0a39a49d9bf527e:0cf4cf15e2ba9b01815122168d856a36:a690933c470b7cfccf0ecf314b3c7631$</string>
+            <string>$TexturePacker:SmartUpdate:9e27b6c9039c3d529809ab3745705da0:69c5b6f072e9d4abeee62800b8f5d215:a690933c470b7cfccf0ecf314b3c7631$</string>
             <key>textureFileName</key>
             <string>TextureAtlas5.pvr.ccz</string>
         </dict>

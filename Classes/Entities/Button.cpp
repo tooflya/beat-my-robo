@@ -3,8 +3,6 @@
 
 #include "Button.h"
 
-USING_NS_CC;
-
 // ===========================================================
 // Inner Classes
 // ===========================================================
@@ -102,7 +100,10 @@ void Button::onTouch(CCTouch* touch, CCEvent* event)
             //SimpleAudioEngine::sharedEngine()->playEffect(Options::SOUND_TAP);
         }
         
-        this->mSender->onTouchButtonsCallback(Options::BUTTONS_ACTION_ONTOUCH, this->mID);
+        if(this->mSender != 0)
+        {
+            this->mSender->onTouchButtonsCallback(Options::BUTTONS_ACTION_ONTOUCH, this->mID);
+        }
     }
 }
 
@@ -150,7 +151,7 @@ void Button::update(float pDeltaTime)
     
     if(this->mText != NULL)
     {
-        this->mText->setScale(this->getScaleX());
+        this->mText->setCenterPosition(this->getCenterX(), this->getCenterY());
         this->mText->setVisible(this->isVisible());
     }
 }
